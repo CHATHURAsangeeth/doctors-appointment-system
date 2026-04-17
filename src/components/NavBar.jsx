@@ -10,8 +10,8 @@ const NavBar = () => {
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
-      <img className="w-44 cursor-pointer" src={assets.logo} alt="" />
-      <ul className="hidden md:flex items-start gap-5 font-medium">
+      <img className="w-46 cursor-pointer" src={assets.logo} alt="" />
+      <ul className="hidden mr-6 text-lg md:flex items-start gap-5 font-medium">
         <NavLink to="/">
           <li className="p-1">Home</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
@@ -33,7 +33,7 @@ const NavBar = () => {
         </NavLink>
       </ul>
 
-      <div className="flex items-center gap-4 cursor-pointer group relative">
+      <div className="flex items-center ml-4 md:ml-8 lg:ml-16 gap-4 cursor-pointer group relative">
         {token ? (
           <div className="flex items-center gap-2 ">
             <img className="w-8 rounded-full" src={assets.profile_pic} alt="" />
