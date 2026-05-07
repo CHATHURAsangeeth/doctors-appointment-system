@@ -23,7 +23,7 @@ const Appointment = () => {
       <div>
         {/*doctors details* */}
 
-        <div>
+        <div className="flex flex-col sm:flex-row gap-4">
           <div>
             <img src={docInfo.image} alt="" />
           </div>
@@ -34,6 +34,19 @@ const Appointment = () => {
               {docInfo.name}
               <img src={assets.verified_icon} alt="" />
             </p>
+            <div>
+              <p>
+                {docInfo.degree} - {docInfo.speciality}
+                
+              </p>
+              <button>{docInfo.experience}</button>
+            </div>
+
+            {/**doctor about */}
+            <div>
+              <p>About <img src={assets.info_icon} alt="" /></p>
+              <p>{docInfo.about}</p>
+            </div>
 
            
           </div>
